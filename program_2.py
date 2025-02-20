@@ -22,7 +22,6 @@ import numpy as np
 
 
 def get_answer():
-    result = 0
     ######################
     num1 = random.randint(-1000000000, 1000000000)
     num2 = random.randint(-1000000000, 1000000000)
@@ -33,7 +32,7 @@ def get_answer():
     # Return the array to the calling function
     return output
 
-
+if __name__ == '__main__':
     # Call kilometer_conversion, don't forget to pass in the kilometer parameter!
     variables = get_answer()
     number1 = variables[0]
@@ -49,3 +48,4 @@ def get_answer():
         print("Congratulations! Your answer is correct.")
     else:
         print("Sorry! Your answer is incorrect. The correct answer is: ", result)
+
